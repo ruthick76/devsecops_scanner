@@ -50,10 +50,6 @@ cd devsecops_scanner
 
 ### 2. Install dependencies
 
-```bash
-pip install -r requirements.txt
- 
-```
 You may need to install Trivy and Checkov manually:
 
 ```bash
