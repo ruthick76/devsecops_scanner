@@ -15,19 +15,19 @@ A lightweight Python-based scanner that integrates static code analysis, contain
 
 devsecops\_scanner/
 │
-├── your\_code\_to\_scan/            # Source code to scan (e.g. app.py)
-├── your\_container/               # Docker image context (Dockerfile)
-├── iac\_code/                     # Terraform/Kubernetes code (e.g. main.tf)
+├── code\_to\_scan/             
+├── container/               
+├── iac\_code/                      
 │
-├── dashboard.py                  # Streamlit dashboard
-├── main.py                       # Orchestrates all scans
-├── data\_store.json               # Stores scan results
+├── dashboard.py                   
+├── main.py                       
+├── data\_store.json               
 │
-├── code\_scanner.py               # Runs Bandit and scores risks
-├── container\_scanner.py          # Runs Trivy for container scanning
-├── iac\_scanner.py                # Runs Checkov for IaC scanning
-├── ml\_model.py                   # Pseudo ML-based risk scoring
-├── utils.py                      # Issue sorting/prioritization
+├── code\_scanner.py               
+├── container\_scanner.py          
+├── iac\_scanner.py                
+├── ml\_model.py                    
+├── utils.py                       
 
 ````
 
