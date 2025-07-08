@@ -18,11 +18,9 @@ devsecops\_scanner/
 ├── code\_to\_scan/             
 ├── container/               
 ├── iac\_code/                      
-│
 ├── dashboard.py                   
 ├── main.py                       
 ├── data\_store.json               
-│
 ├── code\_scanner.py               
 ├── container\_scanner.py          
 ├── iac\_scanner.py                
