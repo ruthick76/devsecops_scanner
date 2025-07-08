@@ -1,0 +1,31 @@
+name: DevSecOps Scan
+
+on: [push, pull_request]
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        pip install bandit trivy checkov streamlit
+
+    - name: Run Scanner
+      run: |
+        mkdir -p your_code_to_scan
+        echo 'print("hello")' > your_code_to_scan/app.py  # dummy test
+        python main.py
+
+    - name: Upload Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: devsecops-report
+        path: data_store.json
