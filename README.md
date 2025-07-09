@@ -10,15 +10,15 @@ A lightweight Python-based scanner that integrates static code analysis, contain
 
  
 
-devsecops\_scanner/
-├── code\_to\_scan/             
-├── workflow/               
-├── iac\_code/                      
+devsecops\_scanner\
+├── code\_to\_scan             
+├── workflow              
+├── iac\_code\
 ├── dashboard.py                   
 ├── main.py                       
 ├── data\_store.json               
-├── scanner.py
-├── analyzer.py 
+├── scanner.py\
+├── analyzer.py\
 ├── container\_scanner.py          
 ├── iac\_scanner.py                
 ├── ml\_model.py                    
